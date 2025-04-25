@@ -88,7 +88,7 @@ System.out.println("On Surface: " + dynamicScheme.getOnSurface());
 <img src="Screenshot 2025-04-26 005204.png" alt="Screenshot" width="600">
 
 <h2>License</h2>
-<p>This project is licensed under the Apache License 2.0. See the <a href="license.txt">LICENSE</a> file for more details.</p>
+<p>This project is licensed under the Apache License 2.0. See the <a href="LICENSE.txt">LICENSE</a> file for more details.</p>
 
 </body>
 </html>
