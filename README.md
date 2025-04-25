@@ -83,6 +83,10 @@ System.out.println("On Surface: " + dynamicScheme.getOnSurface());
     <li>Text Colors (e.g., Text Primary, Text Secondary)</li>
 </ul>
 
+<h2>Screenshot</h2>
+<p>Below is a screenshot of the app's output:</p>
+<img src="images/screenshot.png" alt="Screenshot" width="600">
+
 <h2>License</h2>
 <p>This project is licensed under the Apache License 2.0. See the <a href="LICENSE">LICENSE</a> file for more details.</p>
 
