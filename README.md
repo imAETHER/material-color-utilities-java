@@ -22,6 +22,9 @@
     <li>Build and run the project on your device or emulator.</li>
 </ol>
 
+<h2>Usage in your own project: implement this library:</h2>
+[![](https://jitpack.io/v/ronenfe/material-color-utilities-main.svg)](https://jitpack.io/#ronenfe/material-color-utilities-main)
+
 <h2>Usage</h2>
 
 <h3>Example Code</h3>
