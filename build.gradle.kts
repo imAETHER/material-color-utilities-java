@@ -3,6 +3,8 @@ plugins {
     id("maven-publish")    // required
     id("signing")          // optional, for Maven Central
 }
+group = "com.github.ronenfe"
+version = "1.0.1"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_11
