@@ -193,5 +193,9 @@ public class TestColor {
 <h2>License</h2>
 <p>This project is licensed under the Apache License 2.0. See the <a href="LICENSE.txt">LICENSE</a> file for more details.</p>
 
+
+## Acknowledgements
+
+This project is based on Google's [Material Color Utilities](https://github.com/material-foundation/material-color-utilities), licensed under the Apache License 2.0.
 </body>
 </html>
