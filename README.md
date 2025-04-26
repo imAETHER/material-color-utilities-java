@@ -2,7 +2,7 @@
 
 <h1>Dynamic Color Scheme Generator</h1>
 
-<p>This repository is à library, ready to use of Google material color utilities. You can check their github for the full documentattion. For example, it provides a utility for generating dynamic color schemes for Android apps using the Material You system. It allows you to generate color palettes dynamically based on a source color, with options for different themes, contrast levels, and platform specifications (Phone/Watch).</p>
+<p>This repository is a library, ready to use of Google material color utilities. You can check their github for the full documentattion. For example, it provides a utility for generating dynamic color schemes for Android apps using the Material You system. It allows you to generate color palettes dynamically based on a source color, with options for different themes, contrast levels, and platform specifications (Phone/Watch).</p>
 
 <h2>Features</h2>
 <ul>
