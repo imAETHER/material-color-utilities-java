@@ -16,8 +16,8 @@
 
 package dynamiccolor;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Supplier;
@@ -33,8 +33,8 @@ public final class MaterialDynamicColors {
 
   private static final ColorSpec colorSpec = new ColorSpec2025();
 
-  @NonNull
-  public DynamicColor highestSurface(@NonNull DynamicScheme s) {
+  @NotNull
+  public DynamicColor highestSurface(@NotNull DynamicScheme s) {
     return colorSpec.highestSurface(s);
   }
 
@@ -42,32 +42,32 @@ public final class MaterialDynamicColors {
   // Main Palettes                                              //
   ////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   public DynamicColor primaryPaletteKeyColor() {
     return colorSpec.primaryPaletteKeyColor();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor secondaryPaletteKeyColor() {
     return colorSpec.secondaryPaletteKeyColor();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor tertiaryPaletteKeyColor() {
     return colorSpec.tertiaryPaletteKeyColor();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor neutralPaletteKeyColor() {
     return colorSpec.neutralPaletteKeyColor();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor neutralVariantPaletteKeyColor() {
     return colorSpec.neutralVariantPaletteKeyColor();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor errorPaletteKeyColor() {
     return colorSpec.errorPaletteKeyColor();
   }
@@ -76,102 +76,102 @@ public final class MaterialDynamicColors {
   // Surfaces [S]                                               //
   ////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   public DynamicColor background() {
     return colorSpec.background();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor onBackground() {
     return colorSpec.onBackground();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor surface() {
     return colorSpec.surface();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor surfaceDim() {
     return colorSpec.surfaceDim();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor surfaceBright() {
     return colorSpec.surfaceBright();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor surfaceContainerLowest() {
     return colorSpec.surfaceContainerLowest();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor surfaceContainerLow() {
     return colorSpec.surfaceContainerLow();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor surfaceContainer() {
     return colorSpec.surfaceContainer();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor surfaceContainerHigh() {
     return colorSpec.surfaceContainerHigh();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor surfaceContainerHighest() {
     return colorSpec.surfaceContainerHighest();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor onSurface() {
     return colorSpec.onSurface();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor surfaceVariant() {
     return colorSpec.surfaceVariant();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor onSurfaceVariant() {
     return colorSpec.onSurfaceVariant();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor inverseSurface() {
     return colorSpec.inverseSurface();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor inverseOnSurface() {
     return colorSpec.inverseOnSurface();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor outline() {
     return colorSpec.outline();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor outlineVariant() {
     return colorSpec.outlineVariant();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor shadow() {
     return colorSpec.shadow();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor scrim() {
     return colorSpec.scrim();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor surfaceTint() {
     return colorSpec.surfaceTint();
   }
@@ -180,7 +180,7 @@ public final class MaterialDynamicColors {
   // Primaries [P]                                              //
   ////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   public DynamicColor primary() {
     return colorSpec.primary();
   }
@@ -190,22 +190,22 @@ public final class MaterialDynamicColors {
     return colorSpec.primaryDim();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor onPrimary() {
     return colorSpec.onPrimary();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor primaryContainer() {
     return colorSpec.primaryContainer();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor onPrimaryContainer() {
     return colorSpec.onPrimaryContainer();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor inversePrimary() {
     return colorSpec.inversePrimary();
   }
@@ -214,22 +214,22 @@ public final class MaterialDynamicColors {
   // Primary Fixed Colors [PF]                                   //
   /////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   public DynamicColor primaryFixed() {
     return colorSpec.primaryFixed();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor primaryFixedDim() {
     return colorSpec.primaryFixedDim();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor onPrimaryFixed() {
     return colorSpec.onPrimaryFixed();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor onPrimaryFixedVariant() {
     return colorSpec.onPrimaryFixedVariant();
   }
@@ -238,7 +238,7 @@ public final class MaterialDynamicColors {
   // Secondaries [Q]                                            //
   ////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   public DynamicColor secondary() {
     return colorSpec.secondary();
   }
@@ -248,17 +248,17 @@ public final class MaterialDynamicColors {
     return colorSpec.secondaryDim();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor onSecondary() {
     return colorSpec.onSecondary();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor secondaryContainer() {
     return colorSpec.secondaryContainer();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor onSecondaryContainer() {
     return colorSpec.onSecondaryContainer();
   }
@@ -267,22 +267,22 @@ public final class MaterialDynamicColors {
   // Secondary Fixed Colors [QF]                                 //
   /////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   public DynamicColor secondaryFixed() {
     return colorSpec.secondaryFixed();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor secondaryFixedDim() {
     return colorSpec.secondaryFixedDim();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor onSecondaryFixed() {
     return colorSpec.onSecondaryFixed();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor onSecondaryFixedVariant() {
     return colorSpec.onSecondaryFixedVariant();
   }
@@ -291,7 +291,7 @@ public final class MaterialDynamicColors {
   // Tertiaries [T]                                             //
   ////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   public DynamicColor tertiary() {
     return colorSpec.tertiary();
   }
@@ -301,17 +301,17 @@ public final class MaterialDynamicColors {
     return colorSpec.tertiaryDim();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor onTertiary() {
     return colorSpec.onTertiary();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor tertiaryContainer() {
     return colorSpec.tertiaryContainer();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor onTertiaryContainer() {
     return colorSpec.onTertiaryContainer();
   }
@@ -320,22 +320,22 @@ public final class MaterialDynamicColors {
   // Tertiary Fixed Colors [TF]                                  //
   /////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   public DynamicColor tertiaryFixed() {
     return colorSpec.tertiaryFixed();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor tertiaryFixedDim() {
     return colorSpec.tertiaryFixedDim();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor onTertiaryFixed() {
     return colorSpec.onTertiaryFixed();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor onTertiaryFixedVariant() {
     return colorSpec.onTertiaryFixedVariant();
   }
@@ -344,7 +344,7 @@ public final class MaterialDynamicColors {
   // Errors [E]                                                 //
   ////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   public DynamicColor error() {
     return colorSpec.error();
   }
@@ -354,17 +354,17 @@ public final class MaterialDynamicColors {
     return colorSpec.errorDim();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor onError() {
     return colorSpec.onError();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor errorContainer() {
     return colorSpec.errorContainer();
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor onErrorContainer() {
     return colorSpec.onErrorContainer();
   }
@@ -387,7 +387,7 @@ public final class MaterialDynamicColors {
   // colorAccent documented as colorSecondary in M3 and colorPrimary in GM3.
   // Android used Material's Container as Primary/Secondary/Tertiary at launch.
   // Therefore, this is a duplicated version of Primary Container.
-  @NonNull
+  @NotNull
   public DynamicColor controlActivated() {
     return colorSpec.controlActivated();
   }
@@ -395,7 +395,7 @@ public final class MaterialDynamicColors {
   // colorControlNormal documented as textColorSecondary in M3 & GM3.
   // In Material, textColorSecondary points to onSurfaceVariant in the non-disabled state,
   // which is Neutral Variant T30/80 in light/dark.
-  @NonNull
+  @NotNull
   public DynamicColor controlNormal() {
     return colorSpec.controlNormal();
   }
@@ -408,39 +408,39 @@ public final class MaterialDynamicColors {
   // DynamicColors do not support alpha currently, and _may_ not need it for this use case,
   // depending on how MDC resolved alpha for the other cases.
   // Returning black in dark mode, white in light mode.
-  @NonNull
+  @NotNull
   public DynamicColor controlHighlight() {
     return colorSpec.controlHighlight();
   }
 
   // textColorPrimaryInverse documented, in both M3 & GM3, documented as N10/N90.
-  @NonNull
+  @NotNull
   public DynamicColor textPrimaryInverse() {
     return colorSpec.textPrimaryInverse();
   }
 
   // textColorSecondaryInverse and textColorTertiaryInverse both documented, in both M3 & GM3, as
   // NV30/NV80
-  @NonNull
+  @NotNull
   public DynamicColor textSecondaryAndTertiaryInverse() {
     return colorSpec.textSecondaryAndTertiaryInverse();
   }
 
   // textColorPrimaryInverseDisableOnly documented, in both M3 & GM3, as N10/N90
-  @NonNull
+  @NotNull
   public DynamicColor textPrimaryInverseDisableOnly() {
     return colorSpec.textPrimaryInverseDisableOnly();
   }
 
   // textColorSecondaryInverse and textColorTertiaryInverse in disabled state both documented,
   // in both M3 & GM3, as N10/N90
-  @NonNull
+  @NotNull
   public DynamicColor textSecondaryAndTertiaryInverseDisabled() {
     return colorSpec.textSecondaryAndTertiaryInverseDisabled();
   }
 
   // textColorHintInverse documented, in both M3 & GM3, as N10/N90
-  @NonNull
+  @NotNull
   public DynamicColor textHintInverse() {
     return colorSpec.textHintInverse();
   }

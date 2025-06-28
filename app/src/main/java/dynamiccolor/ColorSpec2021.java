@@ -19,8 +19,8 @@ package dynamiccolor;
 import static java.lang.Math.max;
 import static java.lang.Math.min;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 
 import contrast.Contrast;
@@ -40,7 +40,7 @@ class ColorSpec2021 implements ColorSpec {
   // Main Palettes                                              //
   ////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor primaryPaletteKeyColor() {
     return new DynamicColor.Builder()
@@ -50,7 +50,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor secondaryPaletteKeyColor() {
     return new DynamicColor.Builder()
@@ -60,7 +60,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor tertiaryPaletteKeyColor() {
     return new DynamicColor.Builder()
@@ -70,7 +70,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor neutralPaletteKeyColor() {
     return new DynamicColor.Builder()
@@ -80,7 +80,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor neutralVariantPaletteKeyColor() {
     return new DynamicColor.Builder()
@@ -90,7 +90,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor errorPaletteKeyColor() {
     return new DynamicColor.Builder()
@@ -104,7 +104,7 @@ class ColorSpec2021 implements ColorSpec {
   // Surfaces [S]                                               //
   ////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor background() {
     return new DynamicColor.Builder()
@@ -115,7 +115,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor onBackground() {
     return new DynamicColor.Builder()
@@ -127,7 +127,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor surface() {
     return new DynamicColor.Builder()
@@ -138,7 +138,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor surfaceDim() {
     return new DynamicColor.Builder()
@@ -150,7 +150,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor surfaceBright() {
     return new DynamicColor.Builder()
@@ -162,7 +162,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor surfaceContainerLowest() {
     return new DynamicColor.Builder()
@@ -174,7 +174,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor surfaceContainerLow() {
     return new DynamicColor.Builder()
@@ -189,7 +189,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor surfaceContainer() {
     return new DynamicColor.Builder()
@@ -204,7 +204,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor surfaceContainerHigh() {
     return new DynamicColor.Builder()
@@ -219,7 +219,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor surfaceContainerHighest() {
     return new DynamicColor.Builder()
@@ -234,7 +234,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor onSurface() {
     return new DynamicColor.Builder()
@@ -246,7 +246,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor surfaceVariant() {
     return new DynamicColor.Builder()
@@ -257,7 +257,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor onSurfaceVariant() {
     return new DynamicColor.Builder()
@@ -269,7 +269,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor inverseSurface() {
     return new DynamicColor.Builder()
@@ -280,7 +280,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor inverseOnSurface() {
     return new DynamicColor.Builder()
@@ -292,7 +292,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor outline() {
     return new DynamicColor.Builder()
@@ -304,7 +304,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor outlineVariant() {
     return new DynamicColor.Builder()
@@ -316,7 +316,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor shadow() {
     return new DynamicColor.Builder()
@@ -326,7 +326,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor scrim() {
     return new DynamicColor.Builder()
@@ -336,7 +336,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor surfaceTint() {
     return new DynamicColor.Builder()
@@ -351,7 +351,7 @@ class ColorSpec2021 implements ColorSpec {
   // Primaries [P]                                              //
   ////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor primary() {
     return new DynamicColor.Builder()
@@ -379,7 +379,7 @@ class ColorSpec2021 implements ColorSpec {
     return null;
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor onPrimary() {
     return new DynamicColor.Builder()
@@ -397,7 +397,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor primaryContainer() {
     return new DynamicColor.Builder()
@@ -422,7 +422,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor onPrimaryContainer() {
     return new DynamicColor.Builder()
@@ -443,7 +443,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor inversePrimary() {
     return new DynamicColor.Builder()
@@ -459,7 +459,7 @@ class ColorSpec2021 implements ColorSpec {
   // Secondaries [Q]                                            //
   ////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor secondary() {
     return new DynamicColor.Builder()
@@ -482,7 +482,7 @@ class ColorSpec2021 implements ColorSpec {
     return null;
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor onSecondary() {
     return new DynamicColor.Builder()
@@ -500,7 +500,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor secondaryContainer() {
     return new DynamicColor.Builder()
@@ -531,7 +531,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor onSecondaryContainer() {
     return new DynamicColor.Builder()
@@ -556,7 +556,7 @@ class ColorSpec2021 implements ColorSpec {
   // Tertiaries [T]                                             //
   ////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor tertiary() {
     return new DynamicColor.Builder()
@@ -585,7 +585,7 @@ class ColorSpec2021 implements ColorSpec {
     return null;
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor onTertiary() {
     return new DynamicColor.Builder()
@@ -603,7 +603,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor tertiaryContainer() {
     return new DynamicColor.Builder()
@@ -630,7 +630,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor onTertiaryContainer() {
     return new DynamicColor.Builder()
@@ -655,7 +655,7 @@ class ColorSpec2021 implements ColorSpec {
   // Errors [E]                                                 //
   ////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor error() {
     return new DynamicColor.Builder()
@@ -676,7 +676,7 @@ class ColorSpec2021 implements ColorSpec {
     return null;
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor onError() {
     return new DynamicColor.Builder()
@@ -688,7 +688,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor errorContainer() {
     return new DynamicColor.Builder()
@@ -703,7 +703,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor onErrorContainer() {
     return new DynamicColor.Builder()
@@ -725,7 +725,7 @@ class ColorSpec2021 implements ColorSpec {
   // Primary Fixed Colors [PF]                                  //
   ////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor primaryFixed() {
     return new DynamicColor.Builder()
@@ -742,7 +742,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor primaryFixedDim() {
     return new DynamicColor.Builder()
@@ -759,7 +759,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor onPrimaryFixed() {
     return new DynamicColor.Builder()
@@ -772,7 +772,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor onPrimaryFixedVariant() {
     return new DynamicColor.Builder()
@@ -789,7 +789,7 @@ class ColorSpec2021 implements ColorSpec {
   // Secondary Fixed Colors [QF]                                //
   ////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor secondaryFixed() {
     return new DynamicColor.Builder()
@@ -806,7 +806,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor secondaryFixedDim() {
     return new DynamicColor.Builder()
@@ -823,7 +823,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor onSecondaryFixed() {
     return new DynamicColor.Builder()
@@ -836,7 +836,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor onSecondaryFixedVariant() {
     return new DynamicColor.Builder()
@@ -853,7 +853,7 @@ class ColorSpec2021 implements ColorSpec {
   // Tertiary Fixed Colors [TF]                                 //
   ////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor tertiaryFixed() {
     return new DynamicColor.Builder()
@@ -870,7 +870,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor tertiaryFixedDim() {
     return new DynamicColor.Builder()
@@ -887,7 +887,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor onTertiaryFixed() {
     return new DynamicColor.Builder()
@@ -900,7 +900,7 @@ class ColorSpec2021 implements ColorSpec {
         .build();
   }
 
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor onTertiaryFixedVariant() {
     return new DynamicColor.Builder()
@@ -930,7 +930,7 @@ class ColorSpec2021 implements ColorSpec {
   // colorAccent documented as colorSecondary in M3 and colorPrimary in GM3.
   // Android used Material's Container as Primary/Secondary/Tertiary at launch.
   // Therefore, this is a duplicated version of Primary Container.
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor controlActivated() {
     return new DynamicColor.Builder()
@@ -944,7 +944,7 @@ class ColorSpec2021 implements ColorSpec {
   // colorControlNormal documented as textColorSecondary in M3 & GM3.
   // In Material, textColorSecondary points to onSurfaceVariant in the non-disabled state,
   // which is Neutral Variant T30/80 in light/dark.
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor controlNormal() {
     return new DynamicColor.Builder()
@@ -962,7 +962,7 @@ class ColorSpec2021 implements ColorSpec {
   // DynamicColors do not support alpha currently, and _may_ not need it for this use case,
   // depending on how MDC resolved alpha for the other cases.
   // Returning black in dark mode, white in light mode.
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor controlHighlight() {
     return new DynamicColor.Builder()
@@ -974,7 +974,7 @@ class ColorSpec2021 implements ColorSpec {
   }
 
   // textColorPrimaryInverse documented, in both M3 & GM3, documented as N10/N90.
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor textPrimaryInverse() {
     return new DynamicColor.Builder()
@@ -986,7 +986,7 @@ class ColorSpec2021 implements ColorSpec {
 
   // textColorSecondaryInverse and textColorTertiaryInverse both documented, in both M3 & GM3, as
   // NV30/NV80
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor textSecondaryAndTertiaryInverse() {
     return new DynamicColor.Builder()
@@ -997,7 +997,7 @@ class ColorSpec2021 implements ColorSpec {
   }
 
   // textColorPrimaryInverseDisableOnly documented, in both M3 & GM3, as N10/N90
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor textPrimaryInverseDisableOnly() {
     return new DynamicColor.Builder()
@@ -1009,7 +1009,7 @@ class ColorSpec2021 implements ColorSpec {
 
   // textColorSecondaryInverse and textColorTertiaryInverse in disabled state both documented,
   // in both M3 & GM3, as N10/N90
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor textSecondaryAndTertiaryInverseDisabled() {
     return new DynamicColor.Builder()
@@ -1020,7 +1020,7 @@ class ColorSpec2021 implements ColorSpec {
   }
 
   // textColorHintInverse documented, in both M3 & GM3, as N10/N90
-  @NonNull
+  @NotNull
   @Override
   public DynamicColor textHintInverse() {
     return new DynamicColor.Builder()
@@ -1034,9 +1034,9 @@ class ColorSpec2021 implements ColorSpec {
   // Other                                                      //
   ////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   @Override
-  public DynamicColor highestSurface(@NonNull DynamicScheme s) {
+  public DynamicColor highestSurface(@NotNull DynamicScheme s) {
     return s.isDark ? surfaceBright() : surfaceDim();
   }
 
@@ -1081,7 +1081,7 @@ class ColorSpec2021 implements ColorSpec {
   // Color value calculations                                    //
   /////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   @Override
   public Hct getHct(DynamicScheme scheme, DynamicColor color) {
     // This is crucial for aesthetics: we aren't simply the taking the standard color
@@ -1279,7 +1279,7 @@ class ColorSpec2021 implements ColorSpec {
   // Scheme Palettes                                              //
   //////////////////////////////////////////////////////////////////
 
-  @NonNull
+  @NotNull
   @Override
   public TonalPalette getPrimaryPalette(
       Variant variant,
@@ -1311,7 +1311,7 @@ class ColorSpec2021 implements ColorSpec {
     throw new IllegalArgumentException("Unsupported variant: " + variant);
   }
 
-  @NonNull
+  @NotNull
   @Override
   public TonalPalette getSecondaryPalette(
       Variant variant,
@@ -1354,7 +1354,7 @@ class ColorSpec2021 implements ColorSpec {
     throw new IllegalArgumentException("Unsupported variant: " + variant);
   }
 
-  @NonNull
+  @NotNull
   @Override
   public TonalPalette getTertiaryPalette(
       Variant variant,
@@ -1400,7 +1400,7 @@ class ColorSpec2021 implements ColorSpec {
     throw new IllegalArgumentException("Unsupported variant: " + variant);
   }
 
-  @NonNull
+  @NotNull
   @Override
   public TonalPalette getNeutralPalette(
       Variant variant,
@@ -1432,7 +1432,7 @@ class ColorSpec2021 implements ColorSpec {
     throw new IllegalArgumentException("Unsupported variant: " + variant);
   }
 
-  @NonNull
+  @NotNull
   @Override
   public TonalPalette getNeutralVariantPalette(
       Variant variant,
@@ -1466,7 +1466,7 @@ class ColorSpec2021 implements ColorSpec {
     throw new IllegalArgumentException("Unsupported variant: " + variant);
   }
 
-  @NonNull
+  @NotNull
   @Override
   public Optional<TonalPalette> getErrorPalette(
       Variant variant,

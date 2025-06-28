@@ -16,13 +16,11 @@
 
 package dynamiccolor;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-
 import contrast.Contrast;
 import dynamiccolor.ColorSpec.SpecVersion;
 import hct.Hct;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import palettes.TonalPalette;
 import utils.MathUtils;
 import java.util.HashMap;
@@ -98,9 +96,9 @@ public final class DynamicColor {
    *     colors. One of them must be the color being constructed.
    */
   public DynamicColor(
-      @NonNull String name,
-      @NonNull Function<DynamicScheme, TonalPalette> palette,
-      @NonNull Function<DynamicScheme, Double> tone,
+      @NotNull String name,
+      @NotNull Function<DynamicScheme, TonalPalette> palette,
+      @NotNull Function<DynamicScheme, Double> tone,
       boolean isBackground,
       @Nullable Function<DynamicScheme, DynamicColor> background,
       @Nullable Function<DynamicScheme, DynamicColor> secondBackground,
@@ -149,9 +147,9 @@ public final class DynamicColor {
    * @param opacity A function returning the opacity of a color, as a number between 0 and 1.
    */
   public DynamicColor(
-      @NonNull String name,
-      @NonNull Function<DynamicScheme, TonalPalette> palette,
-      @NonNull Function<DynamicScheme, Double> tone,
+      @NotNull String name,
+      @NotNull Function<DynamicScheme, TonalPalette> palette,
+      @NotNull Function<DynamicScheme, Double> tone,
       boolean isBackground,
       @Nullable Function<DynamicScheme, DynamicColor> background,
       @Nullable Function<DynamicScheme, DynamicColor> secondBackground,
@@ -172,9 +170,9 @@ public final class DynamicColor {
   }
 
   public DynamicColor(
-      @NonNull String name,
-      @NonNull Function<DynamicScheme, TonalPalette> palette,
-      @NonNull Function<DynamicScheme, Double> tone,
+      @NotNull String name,
+      @NotNull Function<DynamicScheme, TonalPalette> palette,
+      @NotNull Function<DynamicScheme, Double> tone,
       boolean isBackground,
       @Nullable Function<DynamicScheme, Double> chromaMultiplier,
       @Nullable Function<DynamicScheme, DynamicColor> background,
@@ -215,11 +213,11 @@ public final class DynamicColor {
    *     a tonal palette, when contrast adjustments are made, intended chroma can be preserved.
    * @param tone Function that provides a tone, given a DynamicScheme.
    */
-  @NonNull
+  @NotNull
   public static DynamicColor fromPalette(
-      @NonNull String name,
-      @NonNull Function<DynamicScheme, TonalPalette> palette,
-      @NonNull Function<DynamicScheme, Double> tone) {
+      @NotNull String name,
+      @NotNull Function<DynamicScheme, TonalPalette> palette,
+      @NotNull Function<DynamicScheme, Double> tone) {
     return new DynamicColor(
         name,
         palette,
@@ -254,11 +252,11 @@ public final class DynamicColor {
    * @param isBackground Whether this dynamic color is a background, with some other color as the
    *     foreground.
    */
-  @NonNull
+  @NotNull
   public static DynamicColor fromPalette(
-      @NonNull String name,
-      @NonNull Function<DynamicScheme, TonalPalette> palette,
-      @NonNull Function<DynamicScheme, Double> tone,
+      @NotNull String name,
+      @NotNull Function<DynamicScheme, TonalPalette> palette,
+      @NotNull Function<DynamicScheme, Double> tone,
       boolean isBackground) {
     return new DynamicColor(
         name,
@@ -279,8 +277,8 @@ public final class DynamicColor {
    * @param name The name of the dynamic color.
    * @param argb The source color from which to extract the hue and chroma.
    */
-  @NonNull
-  public static DynamicColor fromArgb(@NonNull String name, int argb) {
+  @NotNull
+  public static DynamicColor fromArgb(@NotNull String name, int argb) {
     Hct hct = Hct.fromInt(argb);
     TonalPalette palette = TonalPalette.fromInt(argb);
     return DynamicColor.fromPalette(name, (s) -> palette, (s) -> hct.getTone());
@@ -292,7 +290,7 @@ public final class DynamicColor {
    * @param scheme Defines the conditions of the user interface, for example, whether or not it is
    *     dark mode or light mode, and what the desired contrast level is.
    */
-  public int getArgb(@NonNull DynamicScheme scheme) {
+  public int getArgb(@NotNull DynamicScheme scheme) {
     int argb = getHct(scheme).toInt();
     if (opacity == null || opacity.apply(scheme) == null) {
       return argb;
@@ -308,8 +306,8 @@ public final class DynamicColor {
    * @param scheme Defines the conditions of the user interface, for example, whether or not it is
    *     dark mode or light mode, and what the desired contrast level is.
    */
-  @NonNull
-  public Hct getHct(@NonNull DynamicScheme scheme) {
+  @NotNull
+  public Hct getHct(@NotNull DynamicScheme scheme) {
     Hct cachedAnswer = hctCache.get(scheme);
     if (cachedAnswer != null) {
       return cachedAnswer;
@@ -326,7 +324,7 @@ public final class DynamicColor {
   }
 
   /** Returns the tone in HCT, ranging from 0 to 100, of the resolved color given scheme. */
-  public double getTone(@NonNull DynamicScheme scheme) {
+  public double getTone(@NotNull DynamicScheme scheme) {
     return ColorSpecs.get(scheme.specVersion).getTone(scheme, this);
   }
 
@@ -427,19 +425,19 @@ public final class DynamicColor {
     private Function<DynamicScheme, Double> opacity;
 
     
-    public Builder setName(@NonNull String name) {
+    public Builder setName(@NotNull String name) {
       this.name = name;
       return this;
     }
 
     
-    public Builder setPalette(@NonNull Function<DynamicScheme, TonalPalette> palette) {
+    public Builder setPalette(@NotNull Function<DynamicScheme, TonalPalette> palette) {
       this.palette = palette;
       return this;
     }
 
     
-    public Builder setTone(@NonNull Function<DynamicScheme, Double> tone) {
+    public Builder setTone(@NotNull Function<DynamicScheme, Double> tone) {
       this.tone = tone;
       return this;
     }
@@ -451,38 +449,38 @@ public final class DynamicColor {
     }
 
     
-    public Builder setChromaMultiplier(@NonNull Function<DynamicScheme, Double> chromaMultiplier) {
+    public Builder setChromaMultiplier(@NotNull Function<DynamicScheme, Double> chromaMultiplier) {
       this.chromaMultiplier = chromaMultiplier;
       return this;
     }
 
     
-    public Builder setBackground(@NonNull Function<DynamicScheme, DynamicColor> background) {
+    public Builder setBackground(@NotNull Function<DynamicScheme, DynamicColor> background) {
       this.background = background;
       return this;
     }
 
     
     public Builder setSecondBackground(
-        @NonNull Function<DynamicScheme, DynamicColor> secondBackground) {
+        @NotNull Function<DynamicScheme, DynamicColor> secondBackground) {
       this.secondBackground = secondBackground;
       return this;
     }
 
     
-    public Builder setContrastCurve(@NonNull Function<DynamicScheme, ContrastCurve> contrastCurve) {
+    public Builder setContrastCurve(@NotNull Function<DynamicScheme, ContrastCurve> contrastCurve) {
       this.contrastCurve = contrastCurve;
       return this;
     }
 
     
-    public Builder setToneDeltaPair(@NonNull Function<DynamicScheme, ToneDeltaPair> toneDeltaPair) {
+    public Builder setToneDeltaPair(@NotNull Function<DynamicScheme, ToneDeltaPair> toneDeltaPair) {
       this.toneDeltaPair = toneDeltaPair;
       return this;
     }
 
     
-    public Builder setOpacity(@NonNull Function<DynamicScheme, Double> opacity) {
+    public Builder setOpacity(@NotNull Function<DynamicScheme, Double> opacity) {
       this.opacity = opacity;
       return this;
     }

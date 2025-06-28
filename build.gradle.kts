@@ -3,7 +3,7 @@ plugins {
     id("maven-publish")    // required
     id("signing")          // optional, for Maven Central
 }
-group = "com.github.ronenfe"
+group = "com.github.imaether"
 version = "1.0.1"
 
 java {

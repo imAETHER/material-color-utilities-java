@@ -6,5 +6,5 @@ pluginManagement {
     }
 }
 
-rootProject.name = "material-color-utilities-main"
+rootProject.name = "material-color-utilities-java"
 include(":app")

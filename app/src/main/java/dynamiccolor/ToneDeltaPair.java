@@ -16,7 +16,7 @@
 
 package dynamiccolor;
 
-import androidx.annotation.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Documents a constraint between two DynamicColors, in which their tones must have a certain
@@ -115,12 +115,12 @@ public final class ToneDeltaPair {
     this.constraint = constraint;
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor getRoleA() {
     return roleA;
   }
 
-  @NonNull
+  @NotNull
   public DynamicColor getRoleB() {
     return roleB;
   }
@@ -129,7 +129,7 @@ public final class ToneDeltaPair {
     return delta;
   }
 
-  @NonNull
+  @NotNull
   public TonePolarity getPolarity() {
     return polarity;
   }
@@ -138,7 +138,7 @@ public final class ToneDeltaPair {
     return stayTogether;
   }
 
-  @NonNull
+  @NotNull
   public DeltaConstraint getConstraint() {
     return constraint;
   }

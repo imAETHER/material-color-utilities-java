@@ -15,7 +15,6 @@ publishing {
     }
 }
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation(libs.annotation.jvm)
+    implementation("org.jetbrains:annotations:24.0.1")
     testImplementation("junit:junit:4.13.2")
 }
