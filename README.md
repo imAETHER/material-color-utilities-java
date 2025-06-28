@@ -13,18 +13,9 @@
     <li>Supports both Phone and Watch platform types.</li>
 </ul>
 
-<h2>Installation</h2>
-<ol>
-    <li>Clone this repository:
-        <pre><code>git clone https://github.com/your-username/dynamic-color-scheme.git</code></pre>
-    </li>
-    <li>Open the project in Android Studio or your preferred IDE.</li>
-    <li>Build and run the project on your device or emulator.</li>
-</ol>
-
 <h2>To implement in your own project, click the badge and follow instructions:</h2>
-<a href="https://jitpack.io/#ronenfe/material-color-utilities-main/Tag">
-  <img src="https://jitpack.io/v/ronenfe/material-color-utilities-main.svg" alt="JitPack">
+<a href="https://jitpack.io/#imAETHER/material-color-utilities-java">
+  <img src="(https://jitpack.io/v/imAETHER/material-color-utilities-java.svg" alt="JitPack">
 </a>
 
 <h2>Usage</h2>
