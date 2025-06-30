@@ -87,7 +87,7 @@ public class ColorUtils {
     return alphaFromArgb(argb) >= 255;
   }
 
-  /** Converts a color from ARGB to XYZ. */
+  /** Converts a color from XYZ to ARGB. */
   public static int argbFromXyz(double x, double y, double z) {
     double[][] matrix = XYZ_TO_SRGB;
     double linearR = matrix[0][0] * x + matrix[0][1] * y + matrix[0][2] * z;
@@ -99,7 +99,7 @@ public class ColorUtils {
     return argbFromRgb(r, g, b);
   }
 
-  /** Converts a color from XYZ to ARGB. */
+  /** Converts a color from ARGB to XYZ. */
   public static double[] xyzFromArgb(int argb) {
     double r = linearized(redFromArgb(argb));
     double g = linearized(greenFromArgb(argb));
